@@ -15,11 +15,22 @@
 <p><b>App:</b> வானிலை - Simple Weather (com.hariism07mani.weather)<br>
 <b>Developer:</b> Weather Forecast · Manikandan A<br>
 <b>Contact:</b> manikandanmcaa@gmail.com<br>
-<b>Last updated:</b> 20 October 2026</p>
+<b>Last updated:</b> 22 October 2026</p>
 
 <p>Simple Weather shows and speaks the weather in Tamil and English. It has
 no accounts, no login, no ads and no tracking. We do not collect, store or
-sell your personal data on any server of ours: the app has no server.</p>
+sell your personal data. Our only server is a small market-price relay on
+Cloudflare that receives just a district name (see below).</p>
+
+<p><b>Not a government app.</b> Simple Weather is made by a private developer.
+It does not represent, and is not connected to, any government body
+(including IMD, NDMA or the Ministry of Agriculture). Government alerts,
+radar pictures and market prices are copied from public official websites:
+<a href="https://sachet.ndma.gov.in">sachet.ndma.gov.in</a>,
+<a href="https://mausam.imd.gov.in">mausam.imd.gov.in</a>,
+<a href="https://agmarknet.gov.in">agmarknet.gov.in</a> and
+<a href="https://data.gov.in">data.gov.in</a>. For official information,
+check those websites.</p>
 
 <h2>Location</h2>
 <ul>
@@ -56,6 +67,11 @@ kept on your phone. Uninstalling the app removes them.</p>
   <li>GDACS (UN / EU) – active cyclones</li>
   <li>aviationweather.gov – weather measured at nearby airports</li>
   <li>OpenStreetMap Nominatim – place search when Open-Meteo finds nothing (place name only)</li>
+  <li>India Meteorological Department (mausam.imd.gov.in) – live rain radar pictures (no position is sent)</li>
+  <li>Our own server on Cloudflare (simple-weather-mandi) – crop market prices.
+    It receives only your district name (e.g. "Salem") and passes the
+    question to data.gov.in (AGMARKNET, Government of India). It keeps no
+    record of who asked.</li>
   <li>Google Play – to check whether a new version of the app is available</li>
 </ul>
 <p>These services receive only what is needed (a rounded position or a
